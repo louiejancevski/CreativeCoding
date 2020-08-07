@@ -1,3 +1,3 @@
 ## Barnsley Fern
 
-### [ Live Demo!](https://louiejancevski.github.io/Creative-Coding/BarnsleyFern/)
+### [ Live Demo!](https://louiejancevski.github.io/CreativeCoding/BarnsleyFern/)
