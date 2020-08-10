@@ -15,23 +15,23 @@ const config = {
 	speed: 0.2,
 }
 
-gui.add(config, "n").min(1).max(359).step(1).listen()
-gui.add(config, "d").min(1).max(359).step(1).listen()
-gui.add(config, "Scale").min(1).max(2000).step(1).listen()
-gui.addColor(config, "Background")
-gui.addColor(config, "Color")
+gui.add(config, 'n').min(1).max(359).step(1).listen()
+gui.add(config, 'd').min(1).max(359).step(1).listen()
+gui.add(config, 'Scale').min(1).max(2000).step(1).listen()
+gui.addColor(config, 'Background')
+gui.addColor(config, 'Color')
 
-var f1 = gui.addFolder("Rotate")
-f1.add(config, "RotateX").name("x-axis")
-f1.add(config, "RotateY").name("y-axis")
-f1.add(config, "RotateZ").name("z-axis")
-f1.add(config, "speed").min(0.1).max(10).step(0.1).name("Speed")
+var f1 = gui.addFolder('Rotate')
+f1.add(config, 'RotateX').name('x-axis')
+f1.add(config, 'RotateY').name('y-axis')
+f1.add(config, 'RotateZ').name('z-axis')
+f1.add(config, 'speed').min(0.1).max(10).step(0.1).name('Speed')
 f1.open()
 
-var f = gui.addFolder("Automate")
-f.add(config, "increaseBy").min(0).max(0.001).step(0.00001).name("var num =")
-f.add(config, "automateN").name("n+= num")
-f.add(config, "automateD").name("d+= num")
+var f = gui.addFolder('Automate')
+f.add(config, 'increaseBy').min(0).max(0.001).step(0.00001).name('var num =')
+f.add(config, 'automateN').name('n+= num')
+f.add(config, 'automateD').name('d+= num')
 
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL)
