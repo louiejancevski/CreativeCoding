@@ -12,7 +12,7 @@ const config = {
 	RotateX: true,
 	RotateY: true,
 	RotateZ: true,
-	speed: 0.1,
+	speed: 0.2,
 }
 
 gui.add(config, 'n').min(1).max(359).step(1).listen()
